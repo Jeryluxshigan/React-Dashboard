@@ -1,12 +1,12 @@
 /* global styles */
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap");
 
-*{
-    font-family:  'Poppins', sans-serif;
-    --primary-color: #011970;
-    --secondary-color: #f7f8ff;
-    --body-color: #ffffff;
-    --text-color: #00000000;
+* {
+  font-family: "Poppins", sans-serif;
+  --primary-color: #011970;
+  --secondary-color: #f7f8ff;
+  --body-color: #ffffff;
+  --text-color: #00000000;
 }
 
 .app {
@@ -23,10 +23,13 @@
 .navbar {
   position: fixed;
   top: 0;
-  left: 160px; 
+  left: 160px;
   width: calc(100vw - 160px); /* Width of viewport minus sidebar width */
-  height: 50px; 
-  background-color: var(--body-color); 
+  height: 50px;
+  background-color: var(--body-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .sidebar {
@@ -34,12 +37,60 @@
   top: 0;
   left: 0;
   height: 100vh;
-  width: 160px; 
-  background-color: var(--primary-color); 
+  width: 160px;
+  background-color: var(--primary-color);
 }
 
 .main-card {
   background-color: rgb(255, 255, 255);
   height: 100vh;
   margin: 15px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: left;
+  color: var(--body-color);
+  margin: 5px 12px;
+}
+.separator {
+  margin-top: -1px;
+}
+
+.subtitle {
+  margin-left: 15px;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.nav-elements {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+  
+}
+
+.profile {
+  background-color: var(--primary-color);
+  padding: 5px;
+  width: 18px;
+  height: 18px;
+  border-radius: 18px;
+  color: var(--body-color);
+  margin-left: 12px;
+}
+
+.profile-name{
+    font-size: 14px;
+}
+.k-avatar{
+    margin-top: -3px;
+    margin-left: 2px;
+}
+
+.name{
+    margin-left:3px;
+    color: var(--primary-color);
+    margin-right: 12px;
 }

@@ -2,17 +2,17 @@ import React from "react";
 import { Avatar } from "@progress/kendo-react-layout";
 
 function Navbar() {
-  const subtitle = "Emploee Dashboard";
-  const username = "Jerluxshigan";
+  const subtitle = "Employee Dashboard";
+  const username = "Jeryluxshigan";
   return (
     <div className="navbar">
       <div className="subtitle"> {subtitle} </div>
       <div className="nav-elements">
-        <svg
+        <svg 
           xmlns="http://www.w3.org/2000/svg"
-          width="18"
-          height="18"
-          fill="#011970"
+          width="20"
+          height="20"
+          fill="#ffffff"
           class="bi bi-bell"
           viewBox="0 0 16 16"
         >
@@ -24,11 +24,11 @@ function Navbar() {
           </Avatar>
         </div>
         <div className="name"> {username} </div>
-        <svg
+        <svg 
           xmlns="http://www.w3.org/2000/svg"
-          width="18"
-          height="18"
-          fill="#011970"
+          width="20"
+          height="20"
+          fill="#ffffff"
           class="bi bi-box-arrow-right"
           viewBox="0 0 16 16"
         >
